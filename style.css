@@ -332,7 +332,7 @@ input[type="checkbox"]::before {
     max-width: 300px;
 }
 
-.paragraph__over18 {
+label {
     max-width: 66%;
     margin: 0;
     color: #9A9A9A;
@@ -341,12 +341,12 @@ input[type="checkbox"]::before {
     margin-bottom: 15px;
 }
 
-.underlined_text {
+span {
     text-decoration: underline;
     cursor: pointer;
 }
 
-.underlined_text:hover {
+span:hover {
     color: #2B5DA8;
 }
 
