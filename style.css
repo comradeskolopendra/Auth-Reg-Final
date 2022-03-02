@@ -45,14 +45,8 @@ button {
     margin-right: 15px;
 }
 
-.main__header {
+h2 {
     font-size: 23px;
-    margin-right: 45px;
-    margin-bottom: 15px;
-}
-
-.main__header__password {
-    margin-right: 115px!important;
 }
 
 .main__paragraph {
@@ -105,7 +99,6 @@ button {
     background: #FECC00;
     -webkit-box-shadow: 0px 10px 30px rgba(254, 204, 0, 0.4);
             box-shadow: 0px 10px 30px rgba(254, 204, 0, 0.4);
-
     border: none;
     width: 300px;
     height: 45px;
@@ -154,12 +147,6 @@ button {
     cursor: pointer;
 }
 
-.container__forgot__password {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
 .paragraph__forgot {
     font-size: 13px;
     margin: 0;
@@ -179,6 +166,7 @@ button {
 .container__accordion {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .container__social {
@@ -279,8 +267,87 @@ input[type="checkbox"]::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
+}
+
+.container__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.display__none {
+    display: none;
+}
+
+.grey__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    background: #E7E7E7;
+    border-radius: 25px;
+    width: 310px;
+    height: 50px;
+    border: none;
+}
+
+.border__right {
+    border: 1px solid grey;
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.bold__text {
+    font-weight: bold;
+}
+
+.input__changePassword {
+    margin: 0;
+}
+
+.container__inputs {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input__password {
+    background: url('./images/eye.svg') no-repeat;
+    background-position-x: 95%;
+    background-position-y: 20px;
+}
+
+.container__over18 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 300px;
+}
+
+.paragraph__over18 {
+    max-width: 66%;
+    margin: 0;
+    color: #9A9A9A;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.underlined_text {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.underlined_text:hover {
+    color: #2B5DA8;
 }
 
 @media screen and (min-width: 1025px) {
@@ -305,15 +372,11 @@ input[type="checkbox"]::before {
         padding-bottom: 25px;
     }
 
-    .main__header {
-        margin-right: 43px;
-        font-size: 23px;
-    }
-
     .main__paragraph {
         font-size: 15px;
         max-width: 250px;
     }
+
     .header {
         height: 120px!important;
         min-width: 100vw;
@@ -375,23 +438,6 @@ input[type="checkbox"]::before {
     }
 }
 
-.display__none {
-    display: none;
-}
-
-.login__phone {
-    margin-right: 30px;
-}
-
-.login__password {
-    margin-right: 30px;
-}
-
-.text__back_footer {
-    font-size: 16px;
-}
-
-
 /* ANIMATIONS */
 
 .animation__arrow {
@@ -400,100 +446,4 @@ input[type="checkbox"]::before {
 
 .arrow__animate {
     transform: rotate(180deg);
-}
-
-.grey__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 60px;
-    background: #E7E7E7;
-    border-radius: 25px;
-    width: 310px;
-    height: 50px;
-    border: none;
-}
-
-.border__right {
-    border: 1px solid grey;
-    height: 25px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.bold__text {
-    font-weight: bold;
-}
-
-.input__changePassword {
-    margin: 0;
-}
-
-.container__inputs {
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.main__header_change {
-    margin-right: 39px!important;
-    margin-bottom: 5px!important;
-}
-
-.input__password {
-    background: url('./images/eye.svg') no-repeat;
-    background-position-x: 95%;
-    background-position-y: 20px;
-}
-
-.main__header_reg {
-    margin-right: 150px!important;
-    margin-bottom: 5px;
-}
-
-.container__over18 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    max-width: 300px;
-}
-
-.paragraph__over18 {
-    max-width: 66%;
-    margin: 0;
-    color: #9A9A9A;
-    font-size: 15px;
-    line-height: 22px;
-    margin-bottom: 15px;
-}
-
-.underlined_text {
-    text-decoration: underline;
-}
-
-.underlined_text:hover {
-    color: #2B5DA8;
-    cursor: pointer;
-}
-
-.main__header_verification {
-    margin-right: 35px!important;
-    margin-bottom: 5px!important;
-}
-
-.main__header_create_password {
-    margin-right: 75px!important;
-    margin-bottom: 5px;
-}
-
-input[type="checkbox"]:checked + label:after {
-    color: yellow;
-}
-
-.main__header_verification {
-    margin-right: 31px!important;
 }
