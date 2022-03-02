@@ -7,8 +7,13 @@ const buttonsShiftNextContent = document.querySelectorAll('[data-shift-content]'
 const buttonsShiftPrevContent = document.querySelectorAll('[data-shift-back]')
 const buttonShiftNextReg = document.querySelectorAll('[data-shift-reg]')
 const buttonShiftBackReg = document.querySelectorAll('[data-back-reg]')
+const buttonConfirm = document.querySelector('[data-error-button]')
 
 const codeChangePassword = document.querySelectorAll('[tabindex]')
+
+const passwordInput = document.querySelectorAll('[data-password]')
+const errorPassword = document.querySelector('[data-error="2"]')
+const eye = document.querySelectorAll('[data-show-password]')
 
 dropDown.addEventListener('click', () => {
     social.classList.toggle('animate')
@@ -75,3 +80,32 @@ buttonShiftBackReg.forEach(element => {
         previuosContent.classList.remove('display__none')
     })
 })
+
+// eye
+
+eye.forEach(element => {
+    element.addEventListener('click', (event) => {
+        const target = event.currentTarget;
+        let inputElement = document.querySelector(`[data-password='${target.dataset.showPassword}']`)
+        element.classList.toggle('eye__path')
+        if (inputElement.getAttribute('type') == 'password') {
+            inputElement.setAttribute('type', 'text')
+        }
+        else if (inputElement.getAttribute('type') == 'text') {
+            inputElement.setAttribute('type', 'password')
+        }
+    })
+})
+
+// error validation
+buttonConfirm.addEventListener('click', (event) => {
+    let inputValues = document.querySelector('[data-error="1"]').value
+    let inputSecondValues = document.querySelector('[data-error="2"]').value
+    if (inputValues != inputSecondValues) {
+        errorPassword.classList.add('input__err')
+    }
+    else {
+        errorPassword.classList.add('input__acs')
+    }
+})
+

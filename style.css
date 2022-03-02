@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Calibri', sans-serif;
     min-width: 320px;
+    font-family: 'Inter', sans-serif;
 }
 
 button {
@@ -46,12 +46,14 @@ button {
 }
 
 h2 {
-    font-size: 23px;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .main__paragraph {
     margin: 0;
-    font-size: 15px;
+    font-size: 13px;
     color: #9A9A9A;
     max-width:250px;
     margin-right: 25px;
@@ -66,7 +68,31 @@ h2 {
     border-radius: 15px;
     border: 1px solid #c4c5c5;
     outline: none;
-    margin-top: 30px;
+    margin-top: 0px;
+}
+
+.container__password_input {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.password-eye {
+    position: absolute;
+    top: 35%;
+    right: 5%
+}
+
+.eye__path path {
+    fill: #2B5DA8
+}
+
+.input__err {
+    border-color: #FF0000;
+}
+
+.input__acs {
+    border-color: green;
 }
 
 .input__reset_password {
@@ -319,10 +345,8 @@ input[type="checkbox"]::before {
     margin-bottom: 15px;
 }
 
-.input__password {
-    background: url('./images/eye.svg') no-repeat;
-    background-position-x: 95%;
-    background-position-y: 20px;
+.input__margin {
+    margin-top: 25px;
 }
 
 .container__over18 {
@@ -336,9 +360,10 @@ label {
     max-width: 66%;
     margin: 0;
     color: #9A9A9A;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 22px;
     margin-bottom: 15px;
+
 }
 
 span {
