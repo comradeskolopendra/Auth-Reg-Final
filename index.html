@@ -30,7 +30,7 @@
 
     <!-- CONTENT -->
     <main class="main">
-        <section class="section__align" id="section__number" data-content="1"  data-content-reg="1">
+        <section class="section__align" data-content="1"  data-content-reg="1">
             <div class="container__text">
                 <h2>Вход в личный кабинет</h2>
                 <p class="main__paragraph">Введите номер телефона, на который был зарегистрирован личный кабинет.</p>
@@ -38,10 +38,10 @@
 
             <input type="text" class="input input_type_tel" placeholder="Телефон">
 
-            <button class="button-yellow" id="logIn" data-shift-content="1">Войти</button>
-            <button class="button-white" id="create__account" data-shift-reg="1">Создать учетную запись</button>
+            <button class="button-yellow" data-shift-content="1">Войти</button>
+            <button class="button-white" data-shift-reg="1">Создать учетную запись</button>
             
-            <div class="container__footer" id="accordion">
+            <div class="container__footer">
                 <div class="container__accordion">
                     <p class="text__login">Войти через соцсети</p>
                     <img src="./images/arrow_down.svg" alt="" srcset="" class="image__arrow animation__arrow" id="arrow_down">
@@ -57,7 +57,7 @@
             </div>
         </section>
 
-        <section class="section__align display__none" id="section__password" data-content="2">
+        <section class="section__align display__none" data-content="2">
             <div class="container__text">
                 <h2>Введите пароль</h2>
                 <p class="main__paragraph">Введите свой пароль от личного кабинета.</p>
@@ -65,21 +65,21 @@
 
             <input type="text" class="input input_type_tel input__password" placeholder="Пароль">
 
-            <div class="container__forgot__password" id="forgot__password">
+            <div id="forgot__password">
                 <p class="paragraph__forgot" data-shift-content="2">Забыли пароль?</p>
             </div>
 
-            <button class="button-yellow" id="confirm">Подтвердить</button>
+            <button class="button-yellow">Подтвердить</button>
 
-            <div class="container__back" id="goBack" data-shift-back="2">
+            <div class="container__back" data-shift-back="2">
                 <img src="./images/arrow_left.svg" class='arrow__back' alt="" srcset="">
-                <p class="text__back_footer">
+                <p>
                     Вернуться назад
                 </p>
             </div>
         </section>
 
-        <section class="section__align display__none" id="section__changePassword" data-content="3">
+        <section class="section__align display__none" data-content="3">
             <div class="container__text">
                 <h2>Восстановление пароля</h2>
                 <p class="main__paragraph">Введите код подтверждения, отправленный по смс на номер
@@ -98,21 +98,21 @@
                 </div>
             </form>
 
-            <button class="grey__button" id="changePasswordButton"  data-shift-content="3">
+            <button class="grey__button" data-shift-content="3">
                 Отправить еще раз
                 <div class="border__right"></div>
                 <span class="bold__text">20 сек</span>
             </button>
 
-            <div class="container__back" id="goBackChange" data-shift-back="3">
+            <div class="container__back" data-shift-back="3">
                 <img src="./images/arrow_left.svg" class='arrow__back' alt="" srcset="">
-                <p class="text__back_footer">
+                <p>
                     Вернуться назад
                 </p>
             </div>
         </section>
 
-        <section class='section__align display__none' id="changePasswordAccess" data-content="4">
+        <section class='section__align display__none' data-content="4">
             <div class="container__text">
                 <h2>Восстановление пароля</h2>
                 <p class="main__paragraph">Придумайте надежный пароль, не менее 6 символов.</p>
@@ -123,11 +123,11 @@
                 <input type="text" class="input input_type_tel input__changePassword input__password" placeholder="Повтор пароля">
             </div>
 
-            <button class="button-yellow" id="confirm">Подтвердить</button>
+            <button class="button-yellow">Подтвердить</button>
 
-            <div class="container__back" id="goBackFromChangeAccess" data-shift-back="4">
+            <div class="container__back" data-shift-back="4">
                 <img src="./images/arrow_left.svg" class='arrow__back' alt="" srcset="">
-                <p class="text__back_footer">
+                <p>
                     Вернуться назад
                 </p>
             </div>
@@ -150,11 +150,11 @@
                     и <span class="underlined_text">правила работы кошелька.</span></label>
             </div>
 
-            <button class="button-yellow" id="RegButton" data-shift-reg="2">Подтвердить</button>
+            <button class="button-yellow" data-shift-reg="2">Подтвердить</button>
 
-            <div class="container__back" id="goBackFromReg" data-back-reg="2">
+            <div class="container__back" data-back-reg="2">
                 <img src="./images/arrow_left.svg" class='arrow__back' alt="" srcset="">
-                <p class="text__back_footer">
+                <p>
                     Вернуться назад
                 </p>
             </div>
@@ -179,21 +179,21 @@
                 </div>
             </form>
 
-            <button class="grey__button" id="numberIsVerificated" data-shift-reg="3">
+            <button class="grey__button" data-shift-reg="3">
                 Отправить еще раз
                 <div class="border__right"></div>
                 <span class="bold__text">20 сек</span>
             </button>
 
-            <div class="container__back" id="goBackFromVerification" data-back-reg="3">
+            <div class="container__back" data-back-reg="3">
                 <img src="./images/arrow_left.svg" class='arrow__back' alt="" srcset="">
-                <p class="text__back_footer">
+                <p>
                     Вернуться назад
                 </p>
             </div>
         </section>
 
-        <section class='section__align display__none' id="registrationPasswordAccess" data-content-reg="4">
+        <section class='section__align display__none' data-content-reg="4">
             <div class="container__text">
                 <h2>Придумайте пароль</h2>
                 <p class="main__paragraph">Придумайте надежный пароль, не менее 6 символов.</p>
@@ -204,11 +204,11 @@
                 <input type="text" class="input input_type_tel input__changePassword input__password" placeholder="Повтор пароля">
             </div>
 
-            <button class="button-yellow" id="confirm">Подтвердить</button>
+            <button class="button-yellow">Подтвердить</button>
 
-            <div class="container__back" id="goBackFromRegistrationPasswordAccess" data-back-reg="4">
+            <div class="container__back" data-back-reg="4">
                 <img src="./images/arrow_left.svg" class='arrow__back' alt="" srcset="">
-                <p class="text__back_footer">
+                <p>
                     Вернуться назад
                 </p>
             </div>
